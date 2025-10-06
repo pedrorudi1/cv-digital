@@ -13,6 +13,7 @@ html{
     --secondary: #010e24;
     --tertiary: rgb(54, 15, 54);
     --text-color: lightgrey;
+    --img-background: url(/assets/nieli-moda-casual.png);
 }
 
 a{
@@ -89,6 +90,43 @@ section {
     padding: 15px;
 }
 
+#experiencia ul {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#experiencia li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 450px;
+    height: auto;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 300ms;
+    text-align: justify;
+}
+
+#experiencia li h3 {
+    text-align: center;
+}
+
+#experiencia li h4 {
+    text-align: center;
+}
+
+#experiencia li:hover {
+    background-color: var(--tertiary);
+}
+
 #projetos li {
     display: flex;
     flex-wrap: wrap;
@@ -97,17 +135,59 @@ section {
     align-items: center;
     gap: 20px;
     width: 300px;
-    height: 450px;
+    height: 660px;
     border: 2px solid lightgrey;
     border-radius: 10px;
     padding: 15px;
-    background-color: var(--secondary);
     transition: all 300ms;
+}
+
+#projetos li a{
+    margin-bottom: 5px;
+}
+
+#projetos li p{
+    text-align: justify;
 }
 
 #ver_no_github {
     border: 2px solid lightgrey;
     border-radius: 5px;
+}
+#nieli-logo {
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+#calculadora-penal {
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+#agenda-img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+#lgpd-img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
 }
 
 #projetos li:hover {
