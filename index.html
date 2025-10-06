@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Gabriel Rudi Reis - Desenvolvedor</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    </style>
+    <link rel="stylesheet" href="/src/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "T_KYiCupUWRRzHEAt",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('emailForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'emailForm', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -106,14 +126,19 @@
        
         <section id="contato">
             <h2>Contato</h2>
-            <p>Se você deseja entrar em contato comigo, por favor envie um e-mail para: <a href="mailto:pedrorudireis@gmail.com" target="_blank">e-mail</a></p>
-            <p>Ou conecte-se comigo no LinkedIn: <a href="https://www.linkedin.com/in/pedro-gabriel-rudi-reis-a5a969b3//" target="_blank">Meu LinkedIn</a></p>
+                <div class="form">
+                    <form id="emailForm">
+                        <input type="text" id="nome" placeholder="Digite o seu nome" name="nome" required></input>
+                        <input type="email" id="email" placeholder="Digite o seu Email" name="email" required></input>
+                        <textarea rows="10" id="mensagem" placeholder="Mensagem..." name="mensagem" required></textarea>
+                        <input type="submit" value="Enviar"></input>
+                    </form>
+                </div>
         </section>
     </main>
+
     <footer>
-        <div>
             <p>&copy; 2025</p>
             <p>Feito com ❤️ por Pedro Gabriel Rudi Reis. Todos os direitos reservados.</p>
-        </div> 
 </body>
 </html>

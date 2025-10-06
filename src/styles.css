@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,10 +15,9 @@ html{
     --secondary: #010e24;
     --tertiary: rgb(54, 15, 54);
     --text-color: lightgrey;
-    --img-background: url(/assets/nieli-moda-casual.png);
 }
 
-a{
+a {
     align-items: center;
     justify-content: center;
     text-decoration: underline;
@@ -39,6 +40,7 @@ body {
     width: 100%;
     flex-wrap: wrap;
     font-size: 18px;
+    text-align: justify;
 }
 
 header .container {
@@ -192,4 +194,68 @@ section {
 
 #projetos li:hover {
     background-color: var(--tertiary);
+}
+
+#contato{
+    text-align: center;
+    display: flex;
+
+}
+
+#contato .form {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    align-items: end;
+
+}
+
+#contato .form input,
+#contato .form textarea {
+    border: 1px solid black;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.form a{
+    text-decoration: none;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 10px;
+    background-color: var(--tertiary);
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    transition: all 300ms;
+}
+
+.form a:hover{
+    background-color: var(--secondary);
+    color: var(--text-color);
+}
+
+#letter {
+    width: 30px;
+    height: 30px;
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    justify-content: space-between;
 }
