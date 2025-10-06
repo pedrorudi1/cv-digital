@@ -83,6 +83,12 @@ section {
     line-height: 1.5;
 }
 
+#projetos{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 #projetos ul{
     display: flex;
     gap: 20px;
@@ -200,11 +206,12 @@ section {
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .fale-conosco {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
