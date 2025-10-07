@@ -59,6 +59,8 @@ header .container {
     border-radius: 50%;
     border: 3px solid lightgrey;
     margin-bottom: 10px;
+    object-fit: cover;
+    object-position: 0 -10px;
 }
 
 #nav-container {
