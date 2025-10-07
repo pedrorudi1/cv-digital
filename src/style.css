@@ -11,9 +11,9 @@ html{
 }
 
 :root {
-    --primary: purple;
+    --primary: rgb(66, 3, 66);
     --secondary: #010e24;
-    --tertiary: rgb(54, 15, 54);
+    --tertiary: rgb(83, 12, 83);
     --text-color: lightgrey;
 }
 
@@ -30,6 +30,7 @@ a {
 a:hover {
     background-color: var(--secondary);
 }
+
 
 body {
     font-family: 'Ubuntu', monospace;
@@ -72,24 +73,20 @@ header .container {
     font-size: 18px;
 }
 
-section {
+#sobre {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
     gap: 20px;
     padding: 20px;
     width: 100%;
     line-height: 1.5;
 }
 
-#projetos ul{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 #experiencia ul {
@@ -127,6 +124,16 @@ section {
 
 #experiencia li:hover {
     background-color: var(--tertiary);
+}
+
+#projetos ul {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 
 #projetos li {
@@ -196,79 +203,47 @@ section {
     background-color: var(--tertiary);
 }
 
-#contato{
-    text-align: center;
+.tecnologias {
     display: flex;
-    justify-content: center;
-}
-
-.fale-conosco {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-#fale-conosco-img {
-    width: 300px;
-    height: 300px;
-}
-
-#emailForm {
-    justify-content: center;
-    align-self: start;
-    display: flex;
-    flex-direction: column;
-    margin-left: 35px;
     gap: 10px;
-    width: 300px;
-    padding: 10px;
-    align-items: end;
-
+    margin-top: 10px;
 }
 
-#emailForm input,
-#emailForm textarea {
-    border: 1px solid black;
-    padding: 10px;
-    outline: none;
-    width: 100%;
-    resize: none;
-}
-
-#emailForm input[type="submit"] {
-    text-decoration: none;
-    border: 2px solid lightgrey;
-    border-radius: 5px;
-    color: var(--text-color);
-    padding: 10px;
-    background-color: var(--tertiary);
-    display: flex;
-    justify-content: center;
-    width: 70px;
-    transition: all 300ms;
-}
-
-#emailForm input[type="submit"]:hover{
-    background-color: var(--secondary);
-    color: var(--text-color);
-}
-
-#letter {
-    width: 30px;
-    height: 30px;
-}
-
-#linkedin {
-    width: 30px;
-    height: 30px;
+.tecnologias img {
+    width: 40px;
+    height: 40px;
 }
 
 footer {
+    height: 150px;
     display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 10px;
     font-size: 14px;
+    justify-content: space-between;
+}
+
+.redes_sociais img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    transition: all 300ms;
+    border: 2px solid transparent;
+    border-radius: 9px;
+}
+
+.redes_sociais img:hover {
+    border: 2px solid lightgrey;
+    border-radius: 9px;
+}
+
+.copyright {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
