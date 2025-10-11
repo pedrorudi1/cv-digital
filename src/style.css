@@ -243,6 +243,10 @@ footer {
     border-radius: 9px;
 }
 
+.redes_sociais a:hover {
+    background-color: transparent;
+}
+
 .redes_sociais img:hover {
     border: 2px solid lightgrey;
     border-radius: 9px;
